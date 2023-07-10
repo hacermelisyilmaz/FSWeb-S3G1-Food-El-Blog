@@ -69,30 +69,66 @@ img {
 .container header nav a:hover {
   /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
   background: white;
-  color: black;
+  color: #e79947;
+}
+
+#banner {
+  background: #f8f2ec;
+}
+
+#bannerimg {
+  display: block;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
+
 #hk {
   margin-top: 20px;
 }
 
+#yemek {
+  width: 40%;
+  height: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#aperatif {
+  width: 30%;
+  height: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#tatlı {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .contact-section {
-  border-top: 1px dashed black;
+  /*border-top: 1px dashed black;*/
   padding: 20px 0;
 }
 
 .contact-section h2 {
   padding: 0;
   margin: 0 0 10px 0;
+  /*margin-left: 20px;
+  margin-top: 50px;*/
 }
 
 /*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
    line-height: 2;
 */
 address.contact-section {
+  margin-left: 20px;
   line-height: 2;
 }
 
@@ -113,7 +149,7 @@ footer .footer-content h3 {
   margin: 20px 0;
 }
 
-footer nav {
+footer .footer-content nav {
   display: flex;
 }
 
@@ -123,13 +159,14 @@ footer nav {
   text-decoration: underline;
 */
 
-footer a {
+footer .footer-content nav a {
   margin: 10px;
+  font-size: larger;
   color: black;
   text-decoration: underline;
 }
 
-footer nav a:first-child {
+footer .footer-content nav a:first-child {
   margin-left: 0;
 }
 
