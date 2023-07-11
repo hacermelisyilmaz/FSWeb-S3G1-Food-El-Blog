@@ -1,6 +1,9 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 * {
   color: #3c373b;
+  box-sizing: border-box; /*araştır*/
+  /*border: 2px solid rgb(108, 86, 230);
+  background: rgba(108, 86, 230, 0.308);*/
 }
 
 h1 {
@@ -27,7 +30,7 @@ h6 {
 
 p {
   font-size: 16px;
-  font-family: roboto;
+  font-family: "Roboto";
   padding: 10px;
   line-height: 1.4;
 }
@@ -45,6 +48,11 @@ img {
 .content-row div {
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
   margin: 20px;
+}
+
+.content-row img {
+  width: 40%;
+  object-fit: cover;
 }
 
 .container {
@@ -72,32 +80,21 @@ img {
   color: #e79947;
 }
 
-#banner {
-  background: #f8f2ec;
+.banner {
+  background: lightgray;
+  padding: 20px;
 }
 
-#bannerimg {
-  display: block;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.banner img {
+  width: 100%;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
 
-#hk {
+.about-section {
   margin-top: 20px;
-}
-
-#yemek {
-  width: 40%;
-  height: 40%;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 #aperatif {
@@ -127,8 +124,7 @@ img {
 /*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
    line-height: 2;
 */
-address.contact-section {
-  margin-left: 20px;
+.contact-section address {
   line-height: 2;
 }
 
